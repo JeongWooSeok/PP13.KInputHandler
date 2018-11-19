@@ -3,12 +3,10 @@
 
 InputHandler::InputHandler()
 {
-	// 생성자 
 }
 
 void InputHandler::clean()
 {
-	// 향후 추가 
 }
 
 void InputHandler::update()

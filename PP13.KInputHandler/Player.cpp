@@ -34,13 +34,9 @@ void Player::draw()
 
 void Player::update()
 {
-	//°¡¼Óµµ Áõ°¡·Î ¹«Ã´ »¡¶óÁü
-	/*m_acceleration.setX(1);
-	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
-	SDLGameObject::update();*/
 	m_velocity.setX(0);
 	m_velocity.setY(0);
-	handleInput(); // add our function
+	handleInput();
 	m_currentFrame = int(((SDL_GetTicks() / 100) % 6));
 	SDLGameObject::update();
 

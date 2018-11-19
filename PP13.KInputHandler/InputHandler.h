@@ -11,7 +11,7 @@ public:
 		return s_pInstance;
 	}
 	void update();
-	void clean();  // 디바이스 관련 초기화된 부분을 clear 
+	void clean();
 	bool isKeyDown(SDL_Scancode key);
 private:
 

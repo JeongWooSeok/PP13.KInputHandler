@@ -33,11 +33,6 @@ void TextureManager::draw(std::string id, int x, int y, int width, int height,
 	destRect.x = x;
 	destRect.y = y;
 
-	//SDL_RenderCopyEx
-	//SDL_RenderCopy에서 회전과 뒤집기를 위한 인자가 3가지 추가된 확장버전 함수
-	//angle, flip 두 인자가 추가 되었으며 angle은 회전시킬 각도(degree) , flip은 뒤집기 옵션이다
-	//SDL_FLIP_NONE = 뒤집지 않음 SDL_FLIP_HORIZONTAL = 수평 뒤집기 SDL_FLIP_VERTICAL _ 수직 뒤집기이다
-	// [참고 링크] https://m.blog.naver.com/PostView.nhn?blogId=pjc0247&logNo=80188617278&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F
 	SDL_RenderCopyEx(pRenderer, m_textureMap[id], &srcRect, &destRect, 0, 0, flip);
 }
 
